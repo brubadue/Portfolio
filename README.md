@@ -12,10 +12,10 @@ We had a vision of making an "English-like" scripting language that could be eas
 
 Prose is composed of 3 main parts:
 1. The Block-Based Front End ([See Gabe's write-up on the UI design of Prose](https://gabekrahulik.dev/writing/prose-scripting))
-2. [[#The Interpreter]]
-3. [[#The Virtual Machine]]
+2. The Interpreter
+3. The Virtual Machine
 #### The Interpreter
-The interpreter is a two-stage [Pratt Parser](https://en.wikipedia.org/wiki/Operator-precedence_parser#:~:text=1%20is%20returned.-,Pratt%20parsing,-edit). The first stage scans the source code and splits out each "Phrase" of each "Sentence" into it's own interpretation unit. Then, when an entity is "Told" to run a Sentence, the interpreter can spit out the instructions for each *phrase* of the *sentence* for the [[#Virtual Machine]] to run.
+The interpreter is a two-stage [Pratt Parser](https://en.wikipedia.org/wiki/Operator-precedence_parser#:~:text=1%20is%20returned.-,Pratt%20parsing,-edit). The first stage scans the source code and splits out each "Phrase" of each "Sentence" into it's own interpretation unit. Then, when an entity is "Told" to run a Sentence, the interpreter can spit out the instructions for each *phrase* of the *sentence* for the Virtual Machine to run.
 #### The Virtual Machine
 #TODO
 ## [Enigma Engine](https://github.com/brubadue/Enigma_Engine)
@@ -28,7 +28,7 @@ The interpreter is a two-stage [Pratt Parser](https://en.wikipedia.org/wiki/Oper
 - I implemented serialization using JSON for Modern C++
 ## [VOIDBLADE](https://store.steampowered.com/app/4371580/VOIDBLADE/)
 
-![](Images/VOIDBLADE.png)
+![](Images/VOIDBLADE.png)\
 [See it on Steam!](https://store.steampowered.com/app/4371580/VOIDBLADE/)
 
 *VOIDBLADE is a 2D stealth platformer centered around dynamic lighting, in which the player must avoid, deceive, and destroy deadly robots in the shadows of an interstellar freighter. You play as a shadow ninja who has infiltrated a dilapidated, droid-operated freighter that is transporting a powerful Void Core; A power source that you desperately need. You must use the arcane powers of the shadows to navigate this deadly spacecraft and escape with the Void Core alive.*
