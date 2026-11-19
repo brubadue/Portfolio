@@ -17,7 +17,8 @@ Prose is composed of 3 main parts:
 #### The Interpreter
 The interpreter is a two-stage [Pratt Parser](https://en.wikipedia.org/wiki/Operator-precedence_parser#:~:text=1%20is%20returned.-,Pratt%20parsing,-edit). The first stage scans the source code and splits out each "Phrase" of each "Sentence" into it's own interpretation unit. Then, when an entity is "Told" to run a Sentence, the interpreter can spit out the instructions for each *phrase* of the *sentence* for the Virtual Machine to run.
 #### The Virtual Machine
-#TODO
+The virtual machine executes the byte code instructions from the Interpreter stage. A large part of making the language usable though was creating an API that let us bind c++ functions to be called by the Virtual Machine.
+
 ## [Enigma Engine](https://github.com/brubadue/Enigma_Engine)
 [Enigma Engine](https://github.com/brubadue/Enigma_Engine) was a hobby 3D game engine of mine over the Summer of 2025, featuring a Custom Editor, OpenGL Renderer, and Entity Component System.![](Images/EnigmaEngine.png)
 #### Outcomes:  
